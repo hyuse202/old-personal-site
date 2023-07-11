@@ -28,6 +28,12 @@ const data = [
         description: "Gnome X11 ricing",
         link: "https://github.com/hyuse202/dotfiles",
       },
+      {
+        id:true,
+        title: "Personal site",
+        description: "My astro personal site",
+        link: "https://github.com/hyuse202/personal-site"
+      }
     ],
   },
 ];
