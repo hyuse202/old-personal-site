@@ -1,0 +1,30 @@
+---
+import ProjectCard from "./project-card.astro";
+import data from "../index";
+---
+
+<div class="mb-5">
+  {
+    data.map((item) => (
+      <div>
+        <h2 data-animate class="mt-10 text-2xl  font-extrabold tracking-tight ">
+          {item.title}
+        </h2>
+
+        <div
+          data-animate
+          style={{ "--stagger": 3 }}
+          class="grid grid-cols-1 md:grid-cols-3 mt-2"
+        >
+          {item.Projects.map((project: any) => (
+            <ProjectCard
+              description={project.description}
+              link={project.link}
+              title={project.title}
+            />
+          ))}
+        </div>
+      </div>
+    ))
+  }
+</div>

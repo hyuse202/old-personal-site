@@ -1,0 +1,64 @@
+---
+import Layout from "~/layouts/Layout.astro";
+import SocialLinks from "~/components/social-links/index.astro";
+// import { Image } from "@astrojs/image/components";
+---
+
+<Layout title="Developer">
+  <section class="flex flex-col sm:mb-0 mb-20">
+    <!-- <div class="mb-4 hidden md:block">
+      <Image
+        format="webp"
+        src={import("../assets/image-2.jpg")}
+        class="rounded-full"
+        width={100}
+        height={100}
+        align-item: 
+        alt="potrait"
+      />
+    </div> -->
+    <h1
+      data-animate
+      style="--stagger:1"
+      class="text-5xl font-extrabold tracking-tighter sm:text-7xl mb-16 max-w-3xl"
+    >
+      Halo, hyuse here.
+    </h1>
+
+    <div
+      data-animate
+      style="--stagger:2"
+      class="font-mono flex flex-col gap-y-1 text-sm sm:text-base sm:max-w-xl max-w-72 text-slate11 text-slate11"
+    >
+      <p>
+        I'm a highschooler and self-taught developer based in
+        <a
+          class="rounded-md hover:bg-slate-5"
+          href="https://en.wikipedia.org/wiki/Vietnam"
+          target="_blank">Vietnam</a
+        >, inspired by
+        <u>
+          <a
+            class="rounded-md hover:bg-slate-5"
+            href="https://github.com/geohot"
+            target="_blank"
+          >
+            @geohotz</a
+          >
+        </u>
+        and
+        <u>
+          <a
+            class="rounded-md hover:bg-slate-5"
+            href="https://twitch.tv/gmhikaru"
+            target="_blank">@gmhikaru</a
+          >
+        </u>
+        <br />
+        Currently working with Typescript, NodeJs and Linux.<br />
+        Outside of work, I'm interested in playing games and reading seinen mangas.
+      </p>
+    </div>
+    <SocialLinks />
+  </section>
+</Layout>

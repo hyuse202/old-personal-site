@@ -1,0 +1,41 @@
+---
+import { Icon } from "astro-icon";
+const Links = [
+  {
+    icon: "feather:github",
+    label: "github account",
+    href: "https://github.com/hyuse202",
+  },
+  {
+    icon: "feather:mail",
+    label: "mail link",
+    href: "mailto:buinguyentanhuy2002@gmail.com",
+  },
+  {
+    icon: "feather:instagram",
+    label: "instagram account",
+    href: "https://www.instagram.com/mc_hyuse202/",
+  },
+  {
+    icon: "feather:twitter",
+    label: "twitter account",
+    href: "https://twitter.com/TlHuy1",
+  },
+];
+---
+
+<div data-animate style="--stagger:3" class="flex items-center gap-x-2 mt-5">
+  {
+    Links.map((item) => (
+      <a
+        href={item.href}
+        aria-label={item.label}
+        class="flex items-center p-1.5 rounded-md theme-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Icon name={item.icon} aria-hidden class="h-5 w-5" />
+      </a>
+    ))
+  }
+</div>
