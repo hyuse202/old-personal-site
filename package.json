@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "@astrojs/image": "^0.3.4",
+    "@astrojs/netlify": "^2.3.0",
     "@astrojs/node": "^1.0.0",
     "@astrojs/prefetch": "^0.0.7",
     "@astrojs/solid-js": "^1.0.0",
@@ -38,7 +39,7 @@
     "@nanostores/solid": "^0.2.0",
     "@prisma/client": "^4.1.1",
     "ariakit": "2.0.0-next.38",
-    "astro": "^1.0.6",
+    "astro": "^2.8.1",
     "astro-icon": "^0.7.3",
     "cookie": "^0.5.0",
     "jsonwebtoken": "^8.5.1",

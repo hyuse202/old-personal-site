@@ -6,14 +6,17 @@ import prefetch from "@astrojs/prefetch";
 import solidJs from "@astrojs/solid-js";
 
 // https://astro.build/config
+import netlify from "@astrojs/netlify/functions";
+
+// https://astro.build/config
 export default defineConfig({
   integrations: [solidJs(), compress(), image(), prefetch()],
   output: "server",
-  adapter: node(),
+  adapter: netlify(),
   vite: {
     ssr: {
       external: ["svgo"],
-      noExternal: ["solid-bottomsheet", "solid-headless", "solid-use"],
-    },
-  },
+      noExternal: ["solid-bottomsheet", "solid-headless", "solid-use"]
+    }
+  }
 });
