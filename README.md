@@ -1,14 +1,23 @@
 ## Table of contents
 
-- [Technologies](#technologies)
+- [Technologies :alembic:
+](#technologies)
 - [Screenshots :camera_flash: ](#screenshots)
 - [Set up 🛠 ](#set-up)
 - [Sources :technologist: ](#sources)
 
 ### Technologies
-- Astro/Typesrcipt
-- TailwindCSS (utility styles)
-- Netlify (Hosting)
+<ul>
+  <li>
+    <a href="https://astro.build" target="_blank">Astrojs</a>/Typescript.
+  </li>
+  <li>
+    <a href="https://tailwindcss.com" target="_blank">TailwindCSS</a> (utility styles).
+  </li>
+  <li>
+    <a href="https://netlify.com" target="_blank">Netlify</a> (hosting).
+  </li>
+</ul>
 
 ## Screenshots
 ![image](https://github.com/hyuse202/personal-site/assets/99476925/83d0164a-aaba-4152-b86c-b20ead92b39f)
