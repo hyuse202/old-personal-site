@@ -1,7 +1,7 @@
 const data = [
   {
     id: "1",
-    title: "Manga website",
+    title: "Website",
     Projects: [
       {
         id: true,
@@ -15,6 +15,12 @@ const data = [
         title: "Kuku manga",
         description: "Not published at this time",
         link: "null",
+      },
+      {
+        id: true,
+        title: "Meflix",
+        description: "A Netflix clone using Nextjs and TMDB api",
+        link: "https://meflix-hyuse.vercel.app"
       },
     ],
   },
