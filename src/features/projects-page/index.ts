@@ -5,16 +5,16 @@ const data = [
     Projects: [
       {
         id: true,
+        title: "Kuku manga",
+        description: "Read manga free and simple with various sources",
+        link: "https://kukumanga.site",
+      },
+      {
+        id: true,
         title: "manga-lib",
         description:
           "Nodejs lib that easily scrape manga content from various websites",
         link: "https://github.com/hyuse202/manga-lib",
-      },
-      {
-        id: true,
-        title: "Kuku manga",
-        description: "Not published at this time",
-        link: "null",
       },
       {
         id: true,

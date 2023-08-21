@@ -1,12 +1,14 @@
 ---
 import MobileMenu from "./mobile-menu";
-
+import { Icon } from "astro-icon";
 const pathname = new URL(Astro.request.url).pathname;
 ---
 
 <div class="w-full max-w-3xl mt-20">
   <a class="hidden md:flex text-sm items-center text-slate-11 justify-center">
-    <em>Build with love and balance.</em>
+    Made with <Icon name={"feather:heart"} aria-hidden class="h-5 w-5 " />an
+    <Icon name={"mdi:scale-balance"} aria-hidden class="h-6 w-6 " />
+      in Vietnam.
   </a>
 </div>
 <div
@@ -18,7 +20,9 @@ const pathname = new URL(Astro.request.url).pathname;
     <div class="px-4 py-4 flex justify-between items-center">
       <div>
         <div class="text-xs flex items-center text-slate-11">
-          <em> Build with love and balance.</em>
+          Made with <Icon name={"feather:heart"} aria-hidden class="h-5 w-5 " />an
+          <Icon name={"mdi:scale-balance"} aria-hidden class="h-6 w-6 " />
+          in Vietnam.
         </div>
       </div>
       <div class="flex justify-end">
@@ -29,6 +33,9 @@ const pathname = new URL(Astro.request.url).pathname;
 </div>
 
 <style is:global>
+  [astro-icon] {
+        margin: 5px; /* add margin */
+    }
   .sb-overflow-hidden {
     overflow: hidden;
   }
